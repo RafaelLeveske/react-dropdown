@@ -1,6 +1,8 @@
 import React from 'react';
 import { GoMarkGithub, GoBell, GoPlus, GoTriangleDown } from 'react-icons/go';
 
+import Dropdown from '../Dropdown';
+
 import { Container, HeaderContent } from './styles';
 import avatar from '../../assets/avatar.jpeg';
 
@@ -9,8 +11,10 @@ const Header: React.FC = () => {
     <Container>
       <HeaderContent>
         <div>
-          <GoMarkGithub size={40} />
-          <input type="text" placeholder="Search or jump to..." />
+          <GoMarkGithub size={32} />
+
+          <Dropdown />
+
           <a href="/teste">Pull requests</a>
           <a href="/teste">Issues</a>
           <a href="/teste">Marketplace</a>
@@ -19,18 +23,18 @@ const Header: React.FC = () => {
 
         <div>
           <button type="button">
-            <GoBell size={20} />
+            <GoBell size={16} />
           </button>
           <aside>
             <button type="button">
-              <GoPlus size={20} />
-              <GoTriangleDown size={15} />
+              <GoPlus size={16} />
+              <GoTriangleDown size={12} />
             </button>
           </aside>
           <aside>
             <button type="button">
               <img src={avatar} alt="Avatar" />
-              <GoTriangleDown size={15} />
+              <GoTriangleDown size={12} />
             </button>
           </aside>
         </div>
