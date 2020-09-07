@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #2d2d30;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 `;
 
 export const HeaderContent = styled.div`
@@ -9,7 +14,7 @@ export const HeaderContent = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
+  height: 50px;
   padding: 0 20px;
   border-bottom: 1px solid #343434;
 
@@ -17,23 +22,13 @@ export const HeaderContent = styled.div`
     display: flex;
     align-items: center;
 
-    input {
-      background: #282a36;
-      border: 0;
-      border-radius: 6px;
-      width: 330px;
-      height: 40px;
-      margin-left: 15px;
-      padding: 0 15px;
-      font-weight: 300;
-    }
-
     a {
       text-decoration: none;
-      margin-left: 15px;
+      margin-left: 13px;
       color: #cdcdcd;
       font-weight: 500;
       transition: 0.2s;
+      font-size: 14px;
     }
 
     a:hover {
@@ -69,8 +64,8 @@ export const HeaderContent = styled.div`
 
       img {
         border-radius: 50%;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
       }
     }
 

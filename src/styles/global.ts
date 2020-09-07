@@ -14,7 +14,7 @@ body {
 }
 body, input, button {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   outline: 0;
 }
 h1, h2, h3, h4, h5, h6, strong {
