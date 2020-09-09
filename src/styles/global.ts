@@ -8,9 +8,13 @@ export default createGlobalStyle`
   outline: 0;
 }
 body {
-  background: #282A36;
-  color: #CDCDCD;
+  background: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.text};
   -webkit-font-smothing: antialiased;
+
+  /* background: #282A36;
+  color: #CDCDCD;
+  -webkit-font-smothing: antialiased; */
 }
 body, input, button {
   font-family: 'Roboto', sans-serif;
