@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const DropDownHeader = styled.input`
-  background: #282a36;
+  background: ${props => props.theme.colors.fourthary};
   border: 0;
   border-radius: 6px;
   width: 280px;
@@ -17,12 +17,14 @@ export const DropDownHeader = styled.input`
   padding: 0 20px;
   font-weight: 300;
   font-size: 14px;
-  color: #cdcdcd;
+  color: #fff;
 
   &:focus {
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
     width: 550px;
     height: 33px;
-    border: 1px solid #d864bb;
+    border: 1px solid ${props => props.theme.colors.secundary};
   }
 `;
 
@@ -36,18 +38,18 @@ export const DropDownListContainer = styled.div`
 export const DropDownList = styled.ul`
   width: 550px;
   list-style: none;
-  background: #282a36;
-  border: 1px solid #d864bb;
+  background: ${props => props.theme.colors.background};
+  border: 1px solid ${props => props.theme.colors.secundary};
   border-radius: 0 0 6px 6px;
   box-sizing: border-box;
-  color: #cdcdcd;
+  color: ${props => props.theme.colors.text};
 `;
 
 export const ListItem = styled.li`
   display: flex;
   align-items: center;
   height: 40px;
-  border-bottom: 1px solid #d864bb;
+  border-bottom: 1px solid ${props => props.theme.colors.secundary};
   font-size: 14px;
   font-weight: 300;
   padding-left: 10px;
@@ -57,8 +59,8 @@ export const ListItem = styled.li`
   }
 
   &:hover {
-    background: #d864bb;
-    color: #fff;
+    background: ${props => props.theme.colors.secundary};
+    color: ${props => props.theme.colors.thirdary};
   }
 
   svg {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #2d2d30;
+  background: ${props => props.theme.colors.primary};
   position: fixed;
   top: 0;
   right: 0;
@@ -22,6 +22,10 @@ export const HeaderContent = styled.div`
     display: flex;
     align-items: center;
 
+    svg {
+      color: #cdcdcd;
+    }
+
     a {
       text-decoration: none;
       margin-left: 13px;
@@ -29,11 +33,21 @@ export const HeaderContent = styled.div`
       font-weight: 500;
       transition: 0.2s;
       font-size: 14px;
+
+      &:hover {
+        opacity: 0.8;
+        color: #aa98fd;
+      }
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
 
-    a:hover {
-      opacity: 0.8;
-      color: #aa98fd;
+    input {
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
   }
 
@@ -46,15 +60,16 @@ export const HeaderContent = styled.div`
       background: transparent;
       color: #cdcdcd;
       transition: 0.2s;
-    }
+      margin-left: 15px;
 
-    button:hover {
-      opacity: 0.8;
-      color: #aa98fd;
+      &:hover {
+        opacity: 0.8;
+        color: #aa98fd;
+      }
     }
 
     aside {
-      margin-left: 15px;
+      margin-left: 5px;
       display: flex;
       align-items: baseline;
 
@@ -67,12 +82,30 @@ export const HeaderContent = styled.div`
         width: 20px;
         height: 20px;
       }
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
 
     aside:last-child {
       svg {
         margin-bottom: 3px;
       }
+    }
+  }
+`;
+
+export const BreakPoint = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg:first-child {
+    margin-right: 15px;
+  }
+  @media (min-width: 1000px) {
+    svg:first-child {
+      display: none;
     }
   }
 `;
