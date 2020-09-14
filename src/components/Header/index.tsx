@@ -44,9 +44,9 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
             checked={title === 'dark'}
             checkedIcon={false}
             uncheckedIcon={false}
-            height={10}
-            width={40}
-            handleDiameter={20}
+            height={9}
+            width={35}
+            handleDiameter={18}
             onColor={colors.secundary}
             offColor={shade(0.5, colors.fifthary)}
           />

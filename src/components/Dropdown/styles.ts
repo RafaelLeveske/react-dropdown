@@ -11,13 +11,13 @@ export const DropDownHeader = styled.input`
   background: ${props => props.theme.colors.fourthary};
   border: 0;
   border-radius: 6px;
-  width: 280px;
-  height: 30px;
+  width: 275px;
+  height: 28px;
   margin-left: 15px;
-  padding: 0 20px;
+  padding: 0 10px 0 10px;
   font-weight: 300;
   font-size: 14px;
-  color: #fff;
+  color: ${props => props.theme.colors.thirdary};
 
   &:focus {
     background: ${props => props.theme.colors.background};
@@ -36,7 +36,7 @@ export const DropDownListContainer = styled.div`
 `;
 
 export const DropDownList = styled.ul`
-  width: 550px;
+  width: 548px;
   list-style: none;
   background: ${props => props.theme.colors.background};
   border: 1px solid ${props => props.theme.colors.secundary};

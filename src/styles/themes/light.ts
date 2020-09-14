@@ -7,6 +7,11 @@ export default {
     thirdary: '#fff',
     fourthary: '#404449',
     fifthary: '#d864bb',
+    sixthary: '#e8eaed',
+    seventhary: '#404449',
+    eigthary: '#e8eaed',
+    ninethary: '#f9826c',
+    tenthary: '#586069',
 
     background: '#FFFFFF',
     text: '#24292E',

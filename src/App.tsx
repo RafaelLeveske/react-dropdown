@@ -4,6 +4,9 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 import usePersistedState from './hooks/state';
 
 import Header from './components/Header';
+import SubHeader from './components/SubHeader';
+
+import Profile from './pages/Profile';
 
 import GlobalStyle from './styles/global';
 import light from './styles/themes/light';
@@ -19,6 +22,8 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header toggleTheme={toggleTheme} />
+      <SubHeader />
+      <Profile />
       <GlobalStyle />
     </ThemeProvider>
   );
