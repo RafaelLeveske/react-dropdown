@@ -14,25 +14,21 @@ export const HeaderContent = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 55px;
   padding: 0 20px;
-  border-bottom: 1px solid #343434;
+  border-bottom: 1px solid ${props => props.theme.colors.sixthary};
 
   > div {
     display: flex;
     align-items: center;
 
-    svg {
-      color: #cdcdcd;
-    }
-
     a {
       text-decoration: none;
-      margin-left: 13px;
+      margin-left: 15px;
       color: #cdcdcd;
       font-weight: 500;
       transition: 0.2s;
-      font-size: 14px;
+      font-size: 15px;
 
       &:hover {
         opacity: 0.8;

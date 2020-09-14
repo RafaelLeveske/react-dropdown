@@ -11,16 +11,17 @@ body {
   background: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.text};
   -webkit-font-smothing: antialiased;
-
-  /* background: #282A36;
-  color: #CDCDCD;
-  -webkit-font-smothing: antialiased; */
 }
 body, input, button {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   outline: 0;
 }
+
+svg {
+  color: #cdcdcd;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
   font-weight: 500;
 }

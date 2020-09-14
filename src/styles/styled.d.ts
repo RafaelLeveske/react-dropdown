@@ -10,6 +10,11 @@ declare module 'styled-components' {
       thirdary: string;
       fourthary: string;
       fifthary: string;
+      sixthary: string;
+      seventhary: string;
+      eigthary: string;
+      ninethary: string;
+      tenthary: string;
 
       background: string;
       text: string;
